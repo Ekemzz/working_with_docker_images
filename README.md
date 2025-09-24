@@ -63,16 +63,13 @@ lets create a dockerfile and enter the commands we want our nginx image to be bu
      <img width="953" height="466" alt="image" src="https://github.com/user-attachments/assets/62caf27b-8940-47e6-ba78-4be94cc9a750" />
 
      because the port 8080 was mapped to nginx port 80, we have to edit the security group to channel traffic through port 8080.
+     <img width="809" height="57" alt="image" src="https://github.com/user-attachments/assets/ec6a2d33-803c-46d4-a443-00e4133ab110" />
      <img width="946" height="398" alt="image" src="https://github.com/user-attachments/assets/321e20b8-1099-4ad9-ac6e-8b7a137771f8" />
      <img width="943" height="374" alt="image" src="https://github.com/user-attachments/assets/6572ba01-2201-4eea-a54b-1ab558e3a44b" />
      <img width="935" height="378" alt="image" src="https://github.com/user-attachments/assets/3e8b9681-d21f-4d66-9a8d-e88bcf95ab3b" />
      <img width="466" height="101" alt="image" src="https://github.com/user-attachments/assets/8ae773fb-7ed4-4b86-97b5-b3457bd23092" />
 
      ---------------------------------------------------------------------------------------------------------------------------------------
-
-
-     
-
 
 
 6. **Tag and push image to a registry (e.g., Docker Hub):**
@@ -82,7 +79,16 @@ lets create a dockerfile and enter the commands we want our nginx image to be bu
    docker push mydockerhubusername/myapp:1.0
    ```
 
-7. **Remove an image (cleanup):**
+
+   -------------------------------------------------------------------------------------------------------------------------
+   lets push the dockerfile image to a repo/docker hub/any registry. Here, the iamge is tagged, and pushed to a repo that was already created in docker hub.
+   <img width="987" height="451" alt="image" src="https://github.com/user-attachments/assets/c0deb4ad-c803-4df7-a318-05b83c31a239" />
+   <img width="963" height="455" alt="image" src="https://github.com/user-attachments/assets/7cae4a32-8e67-4136-baa3-9fd2061a2cfa" />
+   <img width="959" height="438" alt="image" src="https://github.com/user-attachments/assets/78a4e03d-2c83-40bb-baae-bbdbf0e0e30a" />
+
+
+
+8. **Remove an image (cleanup):**
 
    ```bash
    docker rmi myapp:1.0
